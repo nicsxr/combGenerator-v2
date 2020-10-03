@@ -1,0 +1,31 @@
+﻿<Window x:Class="CombGenV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CombGenV2"
+        mc:Ignorable="d"
+        Title="CombGenerator" Height="450" Width="304" WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow">
+    <Grid>
+        <TextBox TextChanged="TextBox_TextChanged" x:Name="textBox" Height="40" Margin="5,43,0,0"
+             TextWrapping="Wrap" VerticalAlignment="Top" Width="276" RenderTransformOrigin="0.667,-2"
+             HorizontalAlignment="Left" FontSize="24"/>
+        <Button Click="Button_Click" x:Name="button" Content="დაწყება" HorizontalAlignment="Center"
+            Margin="110,116,110,263" Width="76" RenderTransformOrigin="0.845,0.261" VerticalAlignment="Center"
+            Height="40"/>
+        <Label x:Name="label" Content="ჩაწერეთ სიტყვა" HorizontalContentAlignment="Center"
+           HorizontalAlignment="Center" Margin="10,233,15,129" VerticalAlignment="Center"
+           RenderTransformOrigin="0.421,-0.423" FontSize="18" Height="57" Width="271" Background="Transparent"/>
+        <Label x:Name="label_Copy" Content="იხილეთ ფაილი Desktop-ზე" HorizontalContentAlignment="Center"
+           HorizontalAlignment="Center" Margin="5,295,20,67" VerticalAlignment="Center"
+           RenderTransformOrigin="0.421,-0.423" FontSize="18" Height="57" Width="271" Background="Transparent"
+           Visibility="Hidden"/>
+        <Label x:Name="loadingLabel" Content="გთხოვთ მოიცადოთ..." HorizontalContentAlignment="Center"
+           HorizontalAlignment="Center" Margin="10,233,15,129" VerticalAlignment="Center"
+           RenderTransformOrigin="0.421,-0.423" FontSize="18" Height="57" Width="271" Background="Transparent"
+           Visibility="Hidden"/>
+        <Label x:Name="label1" Content="© Nikoloz Skhirtladze" HorizontalAlignment="Left" Margin="155,383,0,0"
+           VerticalAlignment="Top"/>
+    </Grid>
+</Window>
